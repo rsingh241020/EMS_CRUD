@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ems-backend
+    env: docker
+    plan: free
+    branch: main
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://dpg-d325vgjipnbc73cuda30-a:5432/ems_system_suuk
+      - key: SPRING_DATASOURCE_USERNAME
+        value: ems_system_suuk_user
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: hDEB67bs8813zwm3xJbYJGR67F0613Db
