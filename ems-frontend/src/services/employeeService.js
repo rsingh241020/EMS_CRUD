@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:8080/api/employees";
+const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api/employees`;
 
 export const getEmployees = () => axios.get(API_BASE_URL);
 export const getEmployeeById = (id) => axios.get(`${API_BASE_URL}/${id}`);
